@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabará - Hospital Infantil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="/assets/IconSabara.png" type="image/x-icon">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="/assets/logoSabara1.png" alt="" style="width: 160px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-3">
+            <span class="text-muted"><img src="/assets/telefoneIcon.png" alt="telefone" width="20px"> (11) 3155-2800</span>
+            <button class="btn btn-primary rounded-pill px-4">Agendar</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+            <h1 class="display-4 fw-bold mb-4">
+              Cuidando do seu filho com <span class="text-primary">amor</span> e carinho
+            </h1>
+            <p class="lead text-muted mb-4">
+              Oferecendo o melhor atendimento pediátrico em um ambiente acolhedor, projetado para fazer as crianças se sentirem confortáveis e felizes.
+            </p>
+            <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+              <button class="btn btn-primary rounded-pill px-4">Agendar Consulta</button>
+              <button class="btn btn-outline-primary rounded-pill px-4">Nossos Serviços</button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-light p-4 rounded-4">
+              <img src="/assets/criancaDown.webp" alt="Crianças felizes no hospital" class="img-fluid rounded-4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-6 fw-bold mb-3">Por que Escolher o Sabará?</h2>
+          <p class="lead text-muted">Comprometidos em oferecer o melhor cuidado em um ambiente acolhedor</p>
+        </div>
+        
+        <div id="featuresCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                      <div class="display-5 mb-3 text-primary">
+                        <img src="/assets/bebeicone.png" alt="" width="80px">
+                      </div>
+                      <h3 class="h5 mb-3">Atendimento Pediátrico</h3>
+                      <p class="text-muted mb-0">Serviços de saúde abrangentes para crianças de todas as idades.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                      <div class="display-5 mb-3 text-primary">
+                        <img src="/assets/doutorIcon.png" alt="" width="80px">
+                      </div>
+                      <h3 class="h5 mb-3">Médicos Especialistas</h3>
+                      <p class="text-muted mb-0">Nossa equipe de pediatras é dedicada ao cuidado do seu filho.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                      <div class="display-5 mb-3 text-primary">
+                        <img src="/assets/tecnologiaIcon.png" alt="" width="80px">
+                      </div>
+                      <h3 class="h5 mb-3">Tecnologia Avançada</h3>
+                      <p class="text-muted mb-0">Equipamentos e instalações modernas para o melhor tratamento.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="services">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-6 fw-bold mb-3">Nossos Serviços</h2>
+          <p class="lead text-muted">Cuidados de saúde completos para crianças de todas as idades</p>
+        </div>
+        
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="display-6 mb-3 text-primary">
+                    <img src="/assets/gargantaIcon.png" alt="garganta" width="60px">
+                </div>
+                <h3 class="h5 mb-3">Aerodigestivo</h3>
+                <p class="text-muted mb-0">Tratamento especializado para condições do sistema respiratório e digestivo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="display-6 mb-3 text-primary">
+                    <img src="/assets/rimIcon.png" alt="rins" width="60px">
+                </div>
+                <h3 class="h5 mb-3">Nefrologia</h3>
+                <p class="text-muted mb-0">Cuidados especializados para doenças renais em crianças.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="display-6 mb-3 text-primary">
+                    <img src="/assets/cancerIcon.png" alt="oncologia" width="60px">
+                </div>
+                <h3 class="h5 mb-3">Oncologia</h3>
+                <p class="text-muted mb-0">Tratamento especializado em oncologia pediátrica.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="display-6 mb-3 text-primary">
+                    <img src="/assets/bebeIcon2.png" alt="bebe" width="60px">
+                </div>
+                <h3 class="h5 mb-3">Terapia Fetal e Neonatal</h3>
+                <p class="text-muted mb-0">Cuidados especializados para bebês e tratamentos fetais.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="display-6 mb-3 text-primary">
+                    <img src="/assets/intestinoIcon.png" alt="intestino" width="60px">
+                </div>
+                <h3 class="h5 mb-3">Reabilitação Intestinal</h3>
+                <p class="text-muted mb-0">Tratamento especializado para problemas intestinais pediátricos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="display-6 mb-3 text-primary">
+                    <img src="/assets/cerebroIcon.png" alt="cerebro" width="60px">
+                </div>
+                <h3 class="h5 mb-3">Neurologia</h3>
+                <p class="text-muted mb-0">Diagnóstico e tratamento de doenças do cérebro, medula, nervos e músculos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light" id="contact">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold mb-3">Entre em Contato</h2>
+            <p class="lead text-muted">Estamos aqui para ajudar você e sua família</p>
+          </div>
+  
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" id="name" required="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" required="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="phone" required="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="4" required="" style="height: 121px;"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary rounded-pill px-4">Enviar Mensagem</button>
+                </form>
+              </div>
+            </div>
+            
+            <div class="col-lg-6">
+              <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                <div class="mb-4">
+                  <h3 class="h5 mb-3 fw-bold">Nosso Endereço</h3>
+                  <p class="text-muted mb-0">Av. Angélica, 1987 - Higienópolis</p>
+                  <p class="text-muted mb-0">São Paulo - SP, 01227-200</p>
+                </div>
+                
+                <div class="mb-4">
+                  <h3 class="h5 mb-3 fw-bold">Telefones</h3>
+                  <p class="text-muted mb-0">Geral: (11) 3155-2800</p>
+                  <p class="text-muted mb-0">Emergência: (11) 3155-2900</p>
+                </div>
+                
+                <div class="mb-4">
+                  <h3 class="h5 mb-3 fw-bold">E-mail</h3>
+                  <p class="text-muted mb-0">contato@sabara.com.br</p>
+                </div>
+                
+                <div>
+                  <h3 class="h5 mb-3 fw-bold">Horário de Funcionamento</h3>
+                  <p class="text-muted mb-0">Segunda a Sexta: 7h às 22h</p>
+                  <p class="text-muted mb-0">Sábados: 7h às 18h</p>
+                  <p class="text-muted mb-0">Domingos e Feriados: 8h às 17h</p>
+                  <p class="text-primary fw-bold mt-2">Pronto Socorro: 24 horas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer with corrected text colors -->
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h3 class="h5 mb-3 text-white">Hospital	Sabará</h3>
+            <p class="text-light mb-0">Oferecendo cuidados excepcionais de saúde para crianças em um ambiente acolhedor.</p>
+            <a href="https://www.instagram.com/hospitalsabara/">
+                <i class="bi bi-instagram" style="font-size: 2rem; margin: 5px; color: white; text-decoration: none;"></i>
+            </a>
+            <a href="https://www.facebook.com/HospitalSabara">
+                <i class="bi bi-facebook" style="font-size: 2rem; margin: 5px; color: white; text-decoration: none;"></i>
+            </a>
+            <a href="https://www.youtube.com/saudedainfancia">
+                <i class="bi bi-youtube" style="font-size: 2rem; margin: 5px; color: white; text-decoration: none;"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/hospital-infantil-sabara/">
+                <i class="bi bi-linkedin" style="font-size: 2rem; margin: 5px; color: white; text-decoration: none;"></i>
+            </a>    
+          </div>
+          <div class="col-lg-4">
+            <h3 class="h5 mb-3 text-white">Contato</h3>
+            <p class="text-light mb-1">(11) 3155-2800</p>
+            <p class="text-light mb-1">contato@sabara.com</p>
+            <p class="text-light mb-0">Av. Angélica, 1987 - SP</p>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="h5 mb-3 text-white">Horário</h3>
+            <p class="text-light mb-1">Segunda - Sexta: 7h - 22h</p>
+            <p class="text-light mb-1">Sábado: 7h - 18h</p>
+            <p class="text-light mb-1">Domingos e feriados: 8h - 17h</p>
+            <p class="text-warning fw-bold mb-0">Emergência: 24H</p>
+          </div>
+        </div>
+        <div class="border-top border-secondary mt-4 pt-4 text-center">
+          <p class="text-light mb-0">&copy; 2025 Sabará - Hospital Infantil. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .btn-primary {
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2bb0d8;
+    border-color: #2bb0d8;
+  }
+  
+  .btn-outline-primary {
+    border-color: #33C3F0;
+    color: #33C3F0;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+  }
+  
+  .text-primary {
+    color: #33C3F0 !important;
+  }
+  
+  .bg-primary {
+    background-color: #33C3F0 !important;
+  }
+  
+  .text-light {
+    color: #f8f9fa !important;
+  }
+  
+  .text-white {
+    color: #ffffff !important;
+  }
+  
+  .text-warning {
+    color: #ffc107 !important;
+  }
+  
+  .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  

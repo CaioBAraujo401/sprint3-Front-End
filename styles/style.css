@@ -41,12 +41,5 @@ body {
   .text-warning {
     color: #ffc107 !important;
   }
-  
-  .card {
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
+
   

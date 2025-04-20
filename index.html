@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sabará - Hospital Infantil</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="/assets/IconSabara.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      *{
+        font-family: "Montserrat", sans-serif;    
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
@@ -36,11 +43,46 @@
           </ul>
           <div class="d-flex align-items-center gap-3">
             <span class="text-muted"><img src="/assets/telefoneIcon.png" alt="telefone" width="20px"> (11) 3155-2800</span>
-            <button class="btn btn-primary rounded-pill px-4">Agendar</button>
+            <button class="btn btn-primary rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Agendar</button>
           </div>
         </div>
       </div>
     </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Agende uma consulta</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label" >Nome</label>
+                <input type="text" class="form-control" placeholder="Seu Nome">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label" place>E-mail</label>
+                <input type="text" class="form-control" placeholder="Seu Email">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label" place>Telefone</label>
+                <input type="text" class="form-control" placeholder="Seu Telefone/Celular">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label" place>Tipo de consulta</label>
+                <input type="text" class="form-control" placeholder="Tipo da sua consulta">
+              </div>              
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Agendar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="py-5" id="home">
       <div class="container">
@@ -53,7 +95,7 @@
               Oferecendo o melhor atendimento pediátrico em um ambiente acolhedor, projetado para fazer as crianças se sentirem confortáveis e felizes.
             </p>
             <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
-              <button class="btn btn-primary rounded-pill px-4">Agendar Consulta</button>
+              <button class="btn btn-primary rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Agendar Consulta</button>
               <button class="btn btn-outline-primary rounded-pill px-4">Nossos Serviços</button>
             </div>
           </div>
@@ -300,5 +342,6 @@
 
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/agendar.js"></script>
   </body>
 </html>
